@@ -22,9 +22,6 @@
                         <a href="about.php">About</a>
                     </li>
                     <li>
-                        <a href="post.php">Sample Post</a>
-                    </li>
-                    <li>
                         <a href="contact.php">Contact</a>
                     </li>
                 </ul>
