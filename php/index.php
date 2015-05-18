@@ -1,4 +1,4 @@
-<?php require_once('./header.php'); ?>  
+<?php require_once('./header.php'); ?>
     <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
     <header class="intro-header" style="background-image: url('img/home-bg.jpg')">
@@ -6,9 +6,9 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <div class="site-heading">
-                        <h1>Clean Blog</h1>
+                        <h1>Alfa Travel</h1>
                         <hr class="small">
-                        <span class="subheading">A Clean Blog Theme by Start Bootstrap</span>
+                        <span class="subheading">Reisblog</span>
                     </div>
                 </div>
             </div>
@@ -58,7 +58,7 @@
                             Failure is not an option
                         </h2>
                         <h3 class="post-subtitle">
-                            Many say exploration is part of our destiny, but it’s actually our duty to future generations.
+                            Many say exploration is part of our destiny, but itï¿½s actually our duty to future generations.
                         </h3>
                     </a>
                     <p class="post-meta">Posted by <a href="#">Start Bootstrap</a> on July 8, 2014</p>
