@@ -32,3 +32,5 @@
 </head>
 
 <body>
+
+<?php require_once('./navigation.php'); ?>

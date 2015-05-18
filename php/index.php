@@ -1,4 +1,5 @@
-   <!-- Page Header -->
+<?php require_once('./header.php'); ?>  
+    <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
     <header class="intro-header" style="background-image: url('img/home-bg.jpg')">
         <div class="container">
@@ -74,4 +75,4 @@
     </div>
 
     <hr>
-
+<?php require_once('./footer.php'); ?>
