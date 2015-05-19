@@ -2,7 +2,7 @@
 /* MYSQL SETTINGS */
 $host = 'localhost';
 $username = 'root';
-$password = 'root';
+$password = '';
 $dbname = 'alfatravel';
 
 /* devine the connection */

@@ -23,7 +23,7 @@
                     <div class="post-heading">
                         <h1> <?php echo $article['title'] . "<br />";?></h1>
                         <h2 class="subheading"> <?php echo $article['subtitle'] . "<br />";?></h2>
-                        <span class="meta">Posted by <?php echo $author['username'];?> on <?php echo $article['created'] . "<br />";?></span>
+                        <span class="meta">Posted by <?php echo $author['firstname']." ".$author['lastname'];?> on <?php echo $article['created'] . "<br />";?></span>
                     </div>
                 </div>
             </div>
@@ -40,7 +40,6 @@
                     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                         <div class="post-preview">
                             <?php echo $article['content'] . "<br />";?>
-                            <hr>
                         </div>
                       </div>
 
@@ -49,6 +48,5 @@
             </div>
         </div>
     </article>
-
     <hr>
 <?php require_once('./footer.php'); ?>

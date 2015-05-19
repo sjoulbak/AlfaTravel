@@ -42,7 +42,7 @@
                             <?php echo $article['intro'] . "<br />";?>
                           </h3>
                       </a>
-                      <p class="post-meta">Posted by <?php echo $author['username'];?> on <?php echo $article['created'] . "<br />";?></p>
+                      <p class="post-meta">Posted by <?php echo $author['firstname']." ".$author['lastname'];?> on <?php echo date("jS F, Y", strtotime($article['created']));?></p>
 
                       <hr>
                   </div>
