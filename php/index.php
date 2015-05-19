@@ -1,4 +1,4 @@
-<?php require_once('includes/database.php'); ?>
+<?php require_once('includes/mysql_config.php'); ?>
 <?php require_once('./header.php'); ?>
     <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
