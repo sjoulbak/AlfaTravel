@@ -1,0 +1,2 @@
+# Ignores mysql_config
+php/includes/mysql_config.php
