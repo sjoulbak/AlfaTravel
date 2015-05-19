@@ -9,7 +9,7 @@
                     <div class="site-heading">
                         <h1>Alfa Travel</h1>
                         <hr class="small">
-                        <span class="subheading">Reisblog</span>
+                        <span class="subheading">Travelblog</span>
                     </div>
                 </div>
             </div>
