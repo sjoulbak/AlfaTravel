@@ -47,9 +47,9 @@ CREATE TABLE IF NOT EXISTS `article` (
 -- Dumping data for table alfatravel.article: ~0 rows (approximately)
 /*!40000 ALTER TABLE `article` DISABLE KEYS */;
 INSERT INTO `article` (`id`, `title`, `subtitle`, `intro`, `content`, `country`, `created`, `image_path`, `administrator_id`) VALUES
-	(1, 'title 1', 'subtitle 1', 'intro 1', 'content 1 ', 'nl', '2015-05-19 11:00:51', 'test/a.jpg', 1),
-	(2, 'title 2', 'subtitle 2', 'intro 2', 'content 2', 'de', '2015-05-19 11:01:13', 'test/a.jpg', 2),
-	(3, 'title 3', 'subtitle 3', 'intro 3', 'content 3', 'nl', '2015-05-19 11:01:41', 'test/b.jpg', 1);
+	(1, 'title 1', 'subtitle 1', 'intro 1', 'content 1 ', 'nl', '2015-05-19 11:00:51', 'img/contact-bg.jpg', 1),
+	(2, 'title 2', 'subtitle 2', 'intro 2', 'content 2', 'de', '2015-05-19 11:01:13', 'img/post-sample-image.jpg', 2),
+	(3, 'title 3', 'subtitle 3', 'intro 3', 'content 3', 'nl', '2015-05-19 11:01:41', 'img/home-bg.jpg', 1);
 /*!40000 ALTER TABLE `article` ENABLE KEYS */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
