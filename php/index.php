@@ -42,12 +42,5 @@
     <?php } ?>
   </div>
 </div>
-<?php " SELECT title
-        FROM blog_post
-        WHERE author = 'Piet'
-        AND published < Now()
-        AND deleted = 0
-        AND created > 01-04-2015
-        AND fb_link IS NOT NULL
-        ORDER BY 'slug' ASC" ?>
+
 <?php require_once('./footer.php'); ?>
