@@ -40,6 +40,7 @@
                     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                         <div class="post-preview">
                             <?php echo $article['content'] . "<br />";?>
+                            <?php echo "<a href='updateform.php?id=".$article['id']."'>edit</a>"; ?>
                         </div>
                       </div>
 

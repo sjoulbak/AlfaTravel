@@ -16,7 +16,7 @@
     </div>
   </div>
 </header>
-
+<?php require_once('./navigation.php'); ?>
 <!-- Main Content -->
 <div class="container">
   <div class="row">
