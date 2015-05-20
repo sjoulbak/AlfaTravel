@@ -1,4 +1,4 @@
- <?php require_once('./header.php'); ?> 
+ <?php require_once('./header.php'); ?>
     <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
     <header class="intro-header" style="background-image: url('img/contact-bg.jpg')">
@@ -23,7 +23,7 @@
                 <!-- Contact Form - Enter your email address on line 19 of the mail/contact_me.php file to make this form work. -->
                 <!-- WARNING: Some web hosts do not allow emails to be sent through forms to common mail hosts like Gmail or Yahoo. It's recommended that you use a private domain email address! -->
                 <!-- NOTE: To use the contact form, your site must be on a live web host with PHP! The form will not work locally! -->
-                <form name="sentMessage" id="contactForm" novalidate>
+                <form name="sentMessage" id="contactForm" action="mail/contact_me.php" novalidate>
                     <div class="row control-group">
                         <div class="form-group col-xs-12 floating-label-form-group controls">
                             <label>Name</label>
@@ -66,4 +66,4 @@
 
     <hr>
 
- <?php require_once('./footer.php'); ?>       
+ <?php require_once('./footer.php'); ?>
