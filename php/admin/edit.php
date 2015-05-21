@@ -1,5 +1,5 @@
 <?php
-include_once('../../includes/mysql_config.php');
+include_once('../includes/mysql_config.php');
 
 $status = isset($_GET['created']) ? $_GET['created'] : false;
 $article = mysqli_fetch_array(mysqli_query($con, "SELECT * FROM article WHERE id =".$_GET['id']));
@@ -39,6 +39,6 @@ if ($status) { echo 'SUCCES!';}
 
   <label>img-path</label><br>
   <input type="text" name="image_path" value="<?php echo $article['image_path']; ?>"><br><br>
-  
+
   <input type="submit">
 </form>
