@@ -1,5 +1,5 @@
 <?php
-require_once('../../includes/mysql_config.php');
+require_once('../includes/mysql_config.php');
 if (!empty($_POST['title'])) {
   $title = $_POST['title'];
   $subtitle = $_POST['subtitle'];
