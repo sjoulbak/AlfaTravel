@@ -24,6 +24,9 @@
                     <li>
                         <a href="contact.php">Contact</a>
                     </li>
+                    <li>
+                        <a href="login.php">Login</a>
+                    </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->

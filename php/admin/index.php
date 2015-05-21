@@ -28,7 +28,6 @@
     ?>
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <div class="post-preview">
-        <?php echo "<a href='article.php?id=".$article['id']."'>"; ?>
 
           <?php
         $result = mysqli_query($con, "SELECT id, title FROM article");
@@ -44,5 +43,3 @@
     <?php } ?>
   </div>
 </div>
-
-<?php require_once('../footer.php'); ?>

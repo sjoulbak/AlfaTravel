@@ -21,7 +21,7 @@
                             </a>
                         </li>
                     </ul>
-                    <p class="copyright text-muted">Copyright &copy; Your Website 2014</p>
+                    <p class="copyright text-muted">Copyright &copy; Alfa Travel 2015</p>
                 </div>
             </div>
         </div>
