@@ -20,7 +20,7 @@ if (!empty($_POST['title'])) {
 
 if ($status) { echo 'SUCCES!';}
 ?>
-<a href="."><?php echo "< Back"; ?></a><br><br>
+<a href="../../admin"><?php echo "< Back"; ?></a><br><br>
 <form action="edit.php?id=<?php echo $_GET['id']; ?>" method="post">
   <label>Title</label><br>
   <input type="text" name="title" value="<?php echo $article['title']; ?>"><br><br>
@@ -39,6 +39,6 @@ if ($status) { echo 'SUCCES!';}
 
   <label>img-path</label><br>
   <input type="text" name="image_path" value="<?php echo $article['image_path']; ?>"><br><br>
-  
+
   <input type="submit">
 </form>

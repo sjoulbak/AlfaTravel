@@ -20,6 +20,7 @@
 <!-- Main Content -->
 <div class="container">
   <div class="row">
+    <a href="article/new.php">Create new article</a>
     <?php
     $result = mysqli_query($con, "SELECT * FROM article");
     while ($article = mysqli_fetch_array($result)) {
@@ -28,15 +29,16 @@
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <div class="post-preview">
         <?php echo "<a href='article.php?id=".$article['id']."'>"; ?>
-          <h2 class="post-title">
-            <?php echo $article['title'] . "<br />";?>
-          </h2>
-          <h3 class="post-subtitle">
-            <?php echo $article['intro'] . "<br />";?>
-          </h3>
-        </a>
-        <p class="post-meta">Posted by <?php echo $author['firstname']." ".$author['lastname'];?> on <?php echo date("jS F, Y", strtotime($article['created']));?></p>
-        <hr>
+
+          <?php
+        $result = mysqli_query($con, "SELECT id, title FROM article");
+        while ($article = mysqli_fetch_array($result)) {
+          $id = $article['id'];
+          $title = $article['title'];
+          echo "<h2>$title</h2><a href='article/edit.php?id=$id'>edit</a> <a href='article/destroy.php?id=$id'>destroy</a><br><hr>";
+        }
+        ?>
+
       </div>
     </div>
     <?php } ?>
