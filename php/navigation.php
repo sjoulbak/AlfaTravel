@@ -9,7 +9,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.php"><img src="img/alfalogo.png" width='200px'></a>
+                <a class="navbar-brand" href="index.php"><img src="/php/img/alfalogo.png" width='200px'></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
