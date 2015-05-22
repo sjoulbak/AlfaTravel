@@ -17,19 +17,24 @@ for ($i = 0; $i < $amount; $i++) {
 
 <!-- Page Header -->
 <!-- Set your background image for this header on the line below. -->
+
 <header class="intro-header" style="background-image: url(<?php echo $article['image_path'];?>)">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-        <div class="post-heading">
-          <h1> <?php echo $article['title'] . "<br />";?></h1>
-          <h2 class="subheading"> <?php echo $article['subtitle'] . "<br />";?></h2>
-          <span class="meta">Posted by <?php echo $author['firstname']." ".$author['lastname'];?> on <?php echo $article['created'] . "<br />";?></span>
+  <div class="overlay">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+          <div class="post-heading">
+            <h1> <?php echo $article['title'] . "<br />";?></h1>
+            <h2 class="subheading"> <?php echo $article['subtitle'] . "<br />";?></h2>
+            <span class="meta">Posted by <?php echo $author['firstname']." ".$author['lastname'];?> on <?php echo $article['created'] . "<br />";?></span>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </header>
+
+<?php require_once('./navigation.php'); ?>
 <!-- Post Content -->
 <article>
   <div class="container">
