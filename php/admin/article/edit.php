@@ -27,7 +27,7 @@ if (!empty($_POST['title'])) {
 
 if ($status) { echo 'SUCCES!';}
 ?>
-<a href="../../admin"><?php echo "< Back"; ?></a><br><br>
+<a href="../../admin"><?php echo "< Back"; ?></a>  Edit <?php echo $article['title']; ?><br><br>
 <form action="edit.php?id=<?php echo $_GET['id']; ?>" method="post">
   <label>Title</label><br>
   <input type="text" name="title" value="<?php echo $article['title']; ?>"><br><br>

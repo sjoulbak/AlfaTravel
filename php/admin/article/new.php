@@ -23,7 +23,7 @@ if (!empty($_POST['title'])) {
   }
 }
 ?>
-<a href="../../admin"><?php echo "< Back"; ?></a><br><br>
+<a href="../../admin"><?php echo "< Back"; ?>  New article</a><br><br>
 <form action="" method="post">
   <label>Title</label><br>
   <input type="text" name="title"><br><br>
