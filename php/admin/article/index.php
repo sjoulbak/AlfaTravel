@@ -1,10 +1,11 @@
 <?php
+session_start();
 require_once('../../includes/mysql_config.php');
-$result = mysqli_query($con, "SELECT id, title FROM article");
-while ($article = mysqli_fetch_array($result)) {
-  $id = $article['id'];
-  $title = $article['title'];
-  echo "$title <a href='edit.php?id=$id'>edit</a> <a href='destroy.php?id=$id'>destroy</a><br>";
+
+$id = isset($_SESSION['id']) ? $_SESSION['id'] : header('location: /php/login.php');
+$user = mysqli_query($con, "SELECT id FROM administrator WHERE id =".$_SESSION['id']);
+if(!$user){
+  header('location: /php/login.php');
 }
 ?>
 <br>

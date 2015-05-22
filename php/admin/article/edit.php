@@ -1,5 +1,12 @@
 <?php
-include_once('../../includes/mysql_config.php');
+session_start();
+require_once('../../includes/mysql_config.php');
+
+$id = isset($_SESSION['id']) ? $_SESSION['id'] : header('location: /php/login.php');
+$user = mysqli_query($con, "SELECT id FROM administrator WHERE id =".$_SESSION['id']);
+if(!$user){
+  header('location: /php/login.php');
+}
 
 $status = isset($_GET['created']) ? $_GET['created'] : false;
 $article = mysqli_fetch_array(mysqli_query($con, "SELECT * FROM article WHERE id =".$_GET['id']));

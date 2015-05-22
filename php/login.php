@@ -1,5 +1,17 @@
-<?php require_once('includes/mysql_config.php'); ?>
 <?php require_once('header.php'); ?>
+<?php require_once('includes/mysql_config.php'); ?>
+<?php
+if(isset($_POST['submit'])){
+    $login = mysqli_query($con, "SELECT * FROM  administrator WHERE username = '".$_POST['username']."' AND password = '".$_POST['password']."'");
+    $user = mysqli_fetch_array($login);
+    if(!$user) {
+        echo "Er zijn geen resultaten gevonden met deze gebruikersnaam/wachtwoord";
+    } else {
+        $_SESSION['id'] = $user['id'];
+        header('location: /php/admin/');
+    }
+}
+?>
 
 <!-- Page Header -->
 <!-- Set your background image for this header on the line below. -->
@@ -9,11 +21,11 @@
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
         <div class="site-heading">
           <section class="main">
-            <form class="form-4">
+            <form class="form-4" method="post">
                 <h1>Login</h1>
                 <p>
                     <label for="login">Username</label>
-                    <input type="text" name="login" placeholder="Username" required>
+                    <input type="text" name="username" placeholder="Username" required>
                 </p>
                 <p>
                     <label for="password">Password</label>
@@ -21,7 +33,7 @@
                 </p>
 
                 <p>
-                    <input type="submit" name="submit" value="Continue">
+                    <input type="submit" name="submit" value="submit">
                 </p>
             </form>​
           </section>
@@ -30,13 +42,3 @@
     </div>
   </div>
 </header>
-
-<!-- Main Content -->
-<div class="container">
-  <div class="row">
-
-
-      </div>
-    </div>
-  </div>
-</div>
