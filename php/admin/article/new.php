@@ -2,10 +2,10 @@
 session_start();
 require_once('../../includes/mysql_config.php');
 
-$id = isset($_SESSION['id']) ? $_SESSION['id'] : header('location: /php/login.php');
+$id = isset($_SESSION['id']) ? $_SESSION['id'] : header('location: ../../login.php');
 $user = mysqli_query($con, "SELECT id FROM administrator WHERE id =".$_SESSION['id']);
 if(!$user){
-  header('location: /php/login.php');
+  header('location: ../../login.php');
 }
 
 if (!empty($_POST['title'])) {
@@ -23,7 +23,7 @@ if (!empty($_POST['title'])) {
   }
 }
 ?>
-<a href="../../admin"><?php echo "< Back"; ?></a>  New article<br><br>
+<a href="../index.php"><?php echo "< Back"; ?></a>  New article<br><br>
 <form action="" method="post">
   <label>Title</label><br>
   <input type="text" name="title"><br><br>

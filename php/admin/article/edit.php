@@ -2,10 +2,10 @@
 session_start();
 require_once('../../includes/mysql_config.php');
 
-$id = isset($_SESSION['id']) ? $_SESSION['id'] : header('location: /php/login.php');
+$id = isset($_SESSION['id']) ? $_SESSION['id'] : header('location: ../../login.php');
 $user = mysqli_query($con, "SELECT id FROM administrator WHERE id =".$_SESSION['id']);
 if(!$user){
-  header('location: /php/login.php');
+  header('location: ../../login.php');
 }
 
 $status = isset($_GET['created']) ? $_GET['created'] : false;
@@ -27,7 +27,7 @@ if (!empty($_POST['title'])) {
 
 if ($status) { echo 'SUCCES!<br><br>';}
 ?>
-<a href="../../admin"><?php echo "< Back"; ?></a><br>Edit <?php echo $article['title']; ?><br><br>
+<a href="../"><?php echo "< Back"; ?></a><br>Edit <?php echo $article['title']; ?><br><br>
 <form action="edit.php?id=<?php echo $_GET['id']; ?>" method="post">
   <label>Title</label><br>
   <input type="text" name="title" value="<?php echo $article['title']; ?>"><br><br>

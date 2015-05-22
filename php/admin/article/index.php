@@ -2,10 +2,10 @@
 session_start();
 require_once('../../includes/mysql_config.php');
 
-$id = isset($_SESSION['id']) ? $_SESSION['id'] : header('location: /php/login.php');
+$id = isset($_SESSION['id']) ? $_SESSION['id'] : header('location: ../../login.php');
 $user = mysqli_query($con, "SELECT id FROM administrator WHERE id =".$_SESSION['id']);
 if(!$user){
-  header('location: /php/login.php');
+  header('location: ../../login.php');
 }
 ?>
 <br>

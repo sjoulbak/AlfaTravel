@@ -1,12 +1,13 @@
 <?php
-require_once('../header.php');
+session_start();
 require_once('../includes/mysql_config.php');
 
-$id = isset($_SESSION['id']) ? $_SESSION['id'] : header('location: /php/login.php');
-$user = mysqli_query($con, "SELECT id FROM administrator WHERE id =".$_SESSION['id']);
+$id = isset($_SESSION['id']) ? $_SESSION['id'] : header('location: ../login.php');
+$user = mysqli_query($con, "SELECT id FROM administrator WHERE id =".$_SESSION['id']) || false;
 if(!$user){
-  header('location: /php/login.php');
+  header('location: ../login.php');
 }
+require_once('../header.php');
 ?>
 
 <!-- Navigation -->
@@ -35,7 +36,7 @@ if(!$user){
 </nav>
 <!-- Page Header -->
 <!-- Set your background image for this header on the line below. -->
-<header class="intro-header" style="background-image: url('/php/img/home-bg.jpg')">
+<header class="intro-header" style="background-image: url('../img/home-bg.jpg')">
   <div class="container">
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
