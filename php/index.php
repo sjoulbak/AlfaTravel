@@ -21,7 +21,7 @@
 <div class="container">
 <div class="row">
   <?php
-  $result = mysqli_query($con, "SELECT * FROM article");
+  $result = mysqli_query($con, "SELECT * FROM article ORDER BY created DESC");
   while ($article = mysqli_fetch_array($result)) {
   $author = mysqli_fetch_array(mysqli_query($con, "SELECT * FROM administrator WHERE id = ". $article['administrator_id']));
   ?>
