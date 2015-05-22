@@ -22,19 +22,18 @@ if(isset($_POST['submit'])){
         <div class="site-heading">
           <section class="main">
             <form class="form-4" method="post">
-                <h1>Login</h1>
-                <p>
-                    <label for="login">Username</label>
-                    <input type="text" name="username" placeholder="Username" required>
-                </p>
-                <p>
-                    <label for="password">Password</label>
-                    <input type="password" name='password' placeholder="Password" required>
-                </p>
-
-                <p>
-                    <input type="submit" name="submit" value="submit">
-                </p>
+              <h1>Login</h1>
+              <p>
+                <label for="login">Username</label>
+                <input type="text" name="username" placeholder="Username" required>
+              </p>
+              <p>
+                <label for="password">Password</label>
+                <input type="password" name='password' placeholder="Password" required>
+              </p>
+              <p>
+                <input type="submit" name="submit" value="submit">
+              </p>
             </form>​
           </section>
         </div>
